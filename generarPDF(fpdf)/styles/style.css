@@ -1,0 +1,59 @@
+/* Estilo para el div principal */
+div {
+    display: flex;                    /* Usamos Flexbox para alinear los elementos dentro del div */
+    justify-content: center;           /* Centra los elementos horizontalmente dentro del div */
+    width: 70%;                        /* El div ocupa el 70% del ancho de la página */
+    margin: 0 15%;                     /* Margen horizontal de 15% a cada lado para centrar el div */
+    margin-top: 3vh;                   /* Margen superior de 3vh (porcentaje relativo a la altura de la ventana) */
+    padding: 20px;                     /* Espacio interno (relleno) de 20px */
+    background-color: #c5ccee;         /* Fondo de color azul claro */
+    border: 4px solid #a4a5dc;         /* Borde de 4px de grosor, color azul oscuro */
+    align-items: center;               /* Centra los elementos verticalmente dentro del div */
+}
+
+/* Estilo para los enlaces dentro del div */
+a {
+    display: block;                    /* Hacemos el enlace un bloque para poder darle dimensiones */
+    width: 10%;                         /* El enlace tiene un 10% del ancho del contenedor */
+    margin: 0 auto;                     /* Centra el enlace horizontalmente */
+    margin-top: 40px;                   /* Añadimos un margen superior de 40px */
+    padding: 5px;                       /* Espacio interno de 5px alrededor del texto */
+    text-align: center;                 /* Alineamos el texto dentro del enlace al centro */
+    font-size: x-large;                 /* Usamos un tamaño de fuente grande */
+    text-decoration: none;              /* Quitamos el subrayado del enlace */
+    border: 2px solid #000000;          /* Borde de 2px de grosor, color negro */
+    background-color: rgb(197, 199, 232); /* Fondo del enlace en un color gris azulado */
+    font-weight: bold;                  /* Ponemos el texto en negrita */
+}
+
+/* Estilo para la tabla */
+table {
+    margin-top: 60px;                   /* Añadimos un margen superior de 60px */
+    border-collapse: collapse;          /* Hacemos que las celdas se fusionen sin espacio entre ellas */
+    width: 75%;                         /* Ancho de la tabla, ocupa el 75% del contenedor */
+    text-align: left;                   /* Alineamos el texto de las celdas a la izquierda por defecto */
+    margin: 0 auto;                     /* Centra la tabla horizontalmente */
+}
+
+/* Estilo para las celdas de la tabla (th = encabezados, td = celdas normales) */
+th, td {
+    padding: 8px;                       /* Espacio interno de 8px en todas las celdas */
+    text-align: left;                   /* Alineamos el contenido de las celdas a la izquierda */
+    border: 2px solid #000000;          /* Borde de 2px de grosor, color negro */
+    text-align: center;                 /* Alineamos el contenido al centro en cada celda */
+}
+
+/* Estilo para las celdas del encabezado (th) */
+th {
+    background-color: #f2f2f2;          /* Fondo gris claro para los encabezados */
+}
+
+/* Estilo para las celdas de la tabla con colores pastel rosa (alternando entre celdas) */
+td:nth-child(odd) {                   /* Seleccionamos las celdas impares */
+    background-color: #a4a5dc;         /* Fondo azul oscuro */
+}
+
+td:nth-child(even) {                  /* Seleccionamos las celdas pares */
+    background-color: #c5ccee;         /* Fondo azul claro */
+}
+
