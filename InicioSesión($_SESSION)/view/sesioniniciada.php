@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="view/cambiar_pw.php">Cambiar Contraseña</a></li>
+                <li><a href="mostrar_formmod.php">Modificar Datos</a></li>
+                <li><a href="cerrarsesion.php">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="sesioniniciadah1">Sesión Iniciada</h1>
+        <?PHP
+        // session_start();
+        echo $_SESSION['id'];
+        
+        ?>
+        
+    </main>
+</body>
+</html>
